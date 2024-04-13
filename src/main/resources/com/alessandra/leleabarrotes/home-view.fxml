@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="556.0" prefWidth="833.0" style="-fx-background-color: #84C53D;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.alessandra.leleabarrotes.controllers.HomeController">
+   <children>
+      <Rectangle arcHeight="1.0" arcWidth="5.0" fill="WHITE" height="95.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="8.0" width="833.0" />
+      <Label layoutX="310.0" layoutY="9.0" text="Abarrotes">
+         <font>
+            <Font name="System Bold" size="46.0" />
+         </font>
+      </Label>
+      <Button fx:id="productosButton" layoutX="496.0" layoutY="194.0" mnemonicParsing="false" onMouseClicked="#onMouseClickedProductosButton" prefHeight="60.0" prefWidth="226.0" style="-fx-background-color: white; -fx-border-radius: 15; -fx-background-radius: 15; -fx-border-color: blue; -fx-border-width: 2;" text="PRODUCTOS">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="ventasButton" layoutX="496.0" layoutY="269.0" mnemonicParsing="false" onMouseClicked="#onMouseClickedVentasButton" prefHeight="60.0" prefWidth="226.0" style="-fx-background-color: white; -fx-border-radius: 15; -fx-background-radius: 15; -fx-border-color: blue; -fx-border-width: 2;" text="VENTAS">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="proveedoresButton" layoutX="496.0" layoutY="343.0" mnemonicParsing="false" onMouseClicked="#onMouseClickedProveedoresButton" prefHeight="60.0" prefWidth="226.0" style="-fx-background-color: white; -fx-border-radius: 15; -fx-background-radius: 15; -fx-border-color: blue; -fx-border-width: 2;" text="PROVEEDORES">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitButton" layoutX="20.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#onMouseClickedExitButton" prefHeight="43.0" prefWidth="96.0" style="-fx-background-color: red; -fx-background-radius: 8;" text="Salir" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Label layoutX="14.0" layoutY="101.0" text="¿Que menu desea abrir?" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="395.0" fitWidth="395.0" layoutX="16.0" layoutY="154.0">
+         <image>
+            <Image url="@Imagenes/LeleLogo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

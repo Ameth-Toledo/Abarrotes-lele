@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="556.0" prefWidth="833.0" style="-fx-background-color: #84C53D;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.alessandra.leleabarrotes.controllers.EliminarProductoController">
+    <children>
+        <Rectangle arcHeight="1.0" arcWidth="5.0" fill="WHITE" height="95.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="8.0" width="833.0" />
+        <Label layoutX="258.0" layoutY="14.0" text=" Eliminar Productos">
+            <font>
+                <Font name="System Bold" size="46.0" />
+            </font>
+        </Label>
+        <Button fx:id="exitButton" layoutX="20.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#onMouseClickedExitButton" prefHeight="43.0" prefWidth="96.0" style="-fx-background-color: red; -fx-background-radius: 8;" text="Salir" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="21.0" />
+            </font>
+        </Button>
+        <TextField fx:id="nombreProductoText" layoutX="50.0" layoutY="114.0" prefHeight="53.0" prefWidth="336.0" promptText="Nombre del producto" style="-fx-background-radius: 15;">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </TextField>
+        <TableView fx:id="productosTable" layoutX="31.0" layoutY="186.0" prefHeight="340.0" prefWidth="784.0">
+            <columns>
+                <TableColumn fx:id="nombreColumn" prefWidth="156.0" text="Nombre" />
+                <TableColumn fx:id="precioColumn" prefWidth="122.0" text="Precio" />
+                <TableColumn fx:id="marcaColumn" prefWidth="138.0" text="Marca" />
+                <TableColumn fx:id="volumenColumn" prefWidth="127.0" text="Volumen" />
+                <TableColumn fx:id="fechaColumn" prefWidth="122.0" text="Fecha" />
+                <TableColumn fx:id="idColumn" prefWidth="116.0" text="Id" />
+            </columns>
+        </TableView>
+      <Button fx:id="eliminarButton" layoutX="672.0" layoutY="114.0" mnemonicParsing="false" onMouseClicked="#onMouseClieckedEliminarButton" prefHeight="53.0" prefWidth="143.0" style="-fx-background-radius: 12; -fx-background-color: red;" text="Eliminar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
