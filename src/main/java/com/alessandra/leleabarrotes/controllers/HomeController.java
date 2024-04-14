@@ -56,8 +56,15 @@ public class HomeController {
     }
 
     @FXML
-    void onMouseClickedVentasButton(MouseEvent event) {
-
+    void onMouseClickedVentasButton(MouseEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("menu-ventas-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.setTitle("Hello!");
+        stage.setScene(scene);
+        stage.getIcons().add(new Image(getClass().getResourceAsStream("/com/alessandra/leleabarrotes/Imagenes/LeleLogo.png")));
+        stage.show();
+        cerrarVentana();
     }
 
     @FXML
